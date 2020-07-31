@@ -1,0 +1,26 @@
+Technology Stack:
+Python 3.8.3
+Django==3.0.8
+
+clone project using this url:
+git clone https://github.com/dineshbhupathi/wedding_task.git
+
+To run project install requirements with below command
+pip install -r requirements.txt
+
+apply migrations to database below commands:
+python manage.py makemigrations
+python manage.py migrate
+
+then run project:(command)
+python manage.py runserver
+
+create product and list of products url:  http://127.0.0.1:8000/products/
+Retrieve a single product or delete product:  http://127.0.0.1:8000/product/1/ -- 1 is product id
+generate report and download csv : http://127.0.0.1:8000/reports/
+
+To see a ui Create admin credintials using below commands:
+python manage.py createsuperuser
+
+after that : http://127.0.0.1:8000/admin/
+login with credintials you will see data in ui tables
