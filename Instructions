@@ -12,6 +12,11 @@ apply migrations to database below commands:
 python manage.py makemigrations
 python manage.py migrate
 
+Now you have to load the data with json file which means feeding data into database with below command
+
+python manage.py loaddata --app guestsmanagement fixtures/products.json
+
+
 then run project:(command)
 python manage.py runserver
 
